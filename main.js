@@ -1,6 +1,8 @@
 var flag = true;
 
-const cheaking = () => {
+const cheaking = (intervalid) => {
+  console.log("interval");
+  console.log(intervalid);
   var event1 = new MouseEvent("click", {
     bubbles: true,
     cancelable: true,
@@ -14,10 +16,16 @@ const cheaking = () => {
   var Tag = document.querySelector("a.rd_btn");
   if (Tag) {
     Tag.dispatchEvent(event1);
+    console.log(Tag.textContent);
+    if (Tag.textContent === "Go to Link »") {
+      clearInterval(intervalid);
+    }
   }
 };
 
-setInterval(cheaking, 500);
+const intervalid = setInterval(() => {
+  cheaking(intervalid);
+}, 500);
 const callme = async () => {
   console.log("its working !");
   if (flag) {
