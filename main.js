@@ -1,8 +1,24 @@
 var flag = true;
 
+const cheaking = () => {
+  var event1 = new MouseEvent("click", {
+    bubbles: true,
+    cancelable: true,
+    view: window,
+  });
+  var btn = document.getElementById("top_nav");
+  if (btn) {
+    console.log("IN");
+    btn.dispatchEvent(event1);
+  }
+  var Tag = document.querySelector("a.rd_btn");
+  if (Tag) {
+    Tag.dispatchEvent(event1);
+  }
+};
+
+setInterval(cheaking, 500);
 const callme = async () => {
-  const scriptjs = document.getElementsByTagName("script");
-  console.log(scriptjs);
   console.log("its working !");
   if (flag) {
     var landing = document.getElementById("landing");
@@ -11,6 +27,7 @@ const callme = async () => {
     }
     flag = false;
   }
+
   var verify_button2 = document.getElementById("verify_button2");
   if (verify_button2) {
     console.log("Verify button :  ", verify_button2);
