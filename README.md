@@ -15,3 +15,7 @@ Step4:Enable Developer Mode: Toggle the switch in the top right corner of the ex
 Step5:Import the Extension: Choose Load unpacked from the Upper Left Corner Option, then select Helper_Movie_download-main folder from your file manager.
 
 Step6:Keep the Folder: Do not delete the Feedback_helper-main folder after importing, as the extension needs these files to function.
+
+# To use
+
+Just go to the movie or series you want to download and click on the link with specific size you want to download and click on episod / Gdrive link and then extension guide you to the final download link.
