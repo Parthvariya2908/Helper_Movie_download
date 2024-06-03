@@ -1,6 +1,6 @@
 # Helper_Movie_download
 
-helps to download movies from site moviesmod
+helps to download movies from site moviesmod and vegamovies.
 
 # installing steps
 
